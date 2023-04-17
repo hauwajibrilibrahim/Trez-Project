@@ -130,7 +130,7 @@ nav .container ul.links li a:hover {
 .container .btn i {
     color: #fff;
 }
-
+/**Showcase**/
 #showcase {
     background: url(/assets/img/call-do-action.png);
     -webkit-background-size: cover;
@@ -161,6 +161,7 @@ nav .container ul.links li a:hover {
     text-transform: uppercase;
     color: #fff;
 }
+/**Google Map**/
 #google-map {
     padding-bottom: 50%;
     position: relative;
@@ -173,6 +174,7 @@ nav .container ul.links li a:hover {
     top: 0;
     position: absolute;
 }
+/**Contact Form Section**/
 #contact{
     position: absolute;
     top: 43%;
