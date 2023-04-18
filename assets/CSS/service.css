@@ -331,8 +331,11 @@ nav .container ul.links li a:hover {
     line-height: 1.7;
     opacity: 0.7;
 }
-.sectionright button{
-    width:70%
+.sectionright .button{
+    width:40%
+}
+.sectionright .button a{
+    margin: auto;
 }
 /**Pricing Section**/
 #pricing {
@@ -523,24 +526,24 @@ nav .container ul.links li a:hover {
     background-color: rgb(125, 42, 202);
     font-size: 1.7em;
 }
-.col-footer .links{
+.col-footer .footerlinks{
     display: flex;
     gap: .7em;
     align-items: center;
     
 }
 
-.col-footer .links a{
+.col-footer .footerlinks a{
     line-height: 2.3;
     font-size: 1em;
     color: #fff;
     text-decoration: none;
 }
-.col-footer .links a:hover {
+.col-footer .footerlinks a:hover {
     color: blue;
     opacity: 0.8;
 }
-.col-footer .links i{
+.col-footer .footerlinks i{
     color: #fff;
 }
 .col-footer .contact{
@@ -561,60 +564,287 @@ nav .container ul.links li a:hover {
 }
 
 
-/*@media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
     body{
         font-size: 10px;
     }
     nav .container{
-        width:100%;
-        padding: 1.4em 0.8em;
+        padding: 20px 10px;
     }
     .logo img{
         width: 2em;
-        font-size: 2em;
+        font-size: 4em;
     }
     #menu-btn {
-        display: initial;
+        display:initial;
+        font-size: 2.8em;
+        margin-top: 1em;
     }
-
-    #menu-close {
-        display: initial;
+    #menu-close{
+        font-size: 2em;
         padding: 15px 20px 20px 40px;
+        display:initial;
         color: #000;
+        align-self: flex-end;
     }
-
     #menu-close:hover {
         color: red;
     }
-    nav .container ul.links {
+    #linkscontainer{
+        display: none;
+    }
+    .links {
         position: absolute;
-        top: 70px;
+        top: 59px;
         left: 0;
         width: 100%;
-        height: 30vh;
+        height: fit-content;
         background-color: #fff;
         backdrop-filter: blur(4.5px);
         display: flex;
         flex-direction: column;
         align-items:flex-start;
         justify-content:center;
-        transition: 0.9s ease;
+        transition: 0.4s ease;
         overflow-x: hidden;
     }
     nav .container ul.links li {
         padding:20px;
-        border: 1px solid rgb(125, 42, 202);
+        border: 1px solid gray;
         width: 100%;
+   
     }
-
-    nav .container ul.links li a {
-        color: rgb(125, 42, 202);
-    }
-
     .container .icon {
         display: none;
     }
     .container .btn{
         display: none;
     }
-}*/
+    #showcase {
+        width: 100%;
+        height: 30vh;
+    }
+    .imagecontent h1 {
+        font-size: 3.4em;
+    }
+
+    .imagecontent h4 {
+        font-size: 1.2em;
+    }
+    #section .sectionshowcase {
+        margin-top: 10em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+    }
+    #section .sectionshowcase .sectionleft {
+        width: 93%;
+        height: 30vh;
+    }
+    .getstart .getstartcontent {
+        padding-top: 7em;
+
+    }
+    #brands .brands {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        overflow-x: hidden;
+    }
+    #footer .footercontainer {
+        padding: 7em 4.8em;
+    }
+
+    #footer .row-footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3em;
+    }
+
+}
+@media screen and (max-width: 600px){
+    #service .servicecontent .service {
+        margin-top: 4em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3em;
+    }
+    .service h4{
+        font-size: 1.4em;
+    }
+    .service .card .serviceheader {
+        position: relative;
+    }
+
+    .service .card .big1 img {
+        position: relative;
+    }
+
+    .service .card .small1 img {
+        position: absolute;
+        top: 24%;
+        left: 17%;
+
+    }
+
+    .service .card .big2 img {
+        position: relative;
+    }
+
+    .service .card .small2 img {
+        position: absolute;
+        top: 24%;
+        left: 17%;
+
+    }
+
+    .service .card .big3 img {
+        position: relative;
+    }
+
+    .service .card .small3 img {
+        position: absolute;
+        top: 23%;
+        left: 17%;
+
+    }
+
+    .service .card .big4 img {
+        position: relative;
+    }
+
+    .service .card .small4 img {
+        position: absolute;
+        top: 13%;
+        left: 17%;
+
+    }
+    #section .sectionshowcase{
+        gap: 3em;
+    }
+    #section .sectionshowcase .sectionleft {
+        width: 93%;
+        height: 37vh;
+    }
+    .pricingsection .prices{
+        gap: 3em;
+    }
+    .pricingsection h4{
+        font-size: 1.4em;
+    }
+    .getstart .getstartcontent {
+        padding-top: 7em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2em;
+    }
+    .getstart .getstartcontent .button {
+        width: 34%;
+    }
+    #brands .brands {
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        overflow-x: hidden;
+    }
+    .brands img{
+        width: 50px;
+    }
+    #footer .footercontainer {
+        margin-top: 0;
+        padding: 10em 4.8em;
+    }
+}
+@media screen and (max-width: 400px){
+    #service h4{
+        font-size: 1.7em;
+    }
+    #section .sectionshowcase .sectionleft {
+        width: 93%;
+        height: 47vh;
+    }
+    .pricingsection h4 {
+        font-size: 1.7em;
+    }
+
+    .getstart .getstartcontent {
+        padding-top: 2.4em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1em;
+    }
+    .getstart .getstartcontent .button {
+        width: 34%;
+    }
+}
+@media screen and (max-width: 300px) {
+    #service h4 {
+        font-size: 1.7em;
+    }
+    .service .card .serviceheader {
+        position: relative;
+    }
+
+    .service .card .big1 img {
+        position: relative;
+    }
+
+    .service .card .small1 img {
+        position: absolute;
+        top: 24%;
+        left: 21%;
+
+    }
+
+    .service .card .big2 img {
+        position: relative;
+    }
+
+    .service .card .small2 img {
+        position: absolute;
+        top: 24%;
+        left: 21%;
+
+    }
+
+    .service .card .big3 img {
+        position: relative;
+    }
+
+    .service .card .small3 img {
+        position: absolute;
+        top: 23%;
+        left:21%;
+
+    }
+
+    .service .card .big4 img {
+        position: relative;
+    }
+
+    .service .card .small4 img {
+        position: absolute;
+        top: 13%;
+        left: 21%;
+
+    }
+    #section .sectionshowcase .sectionleft {
+        width: 93%;
+        height: 47vh;
+    }
+
+    .pricingsection h4 {
+        font-size: 1.7em;
+    }
+
+    .getstart .getstartcontent {
+        padding-top: 2.4em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1em;
+    }
+
+    .getstart .getstartcontent .button {
+        width: 48%;
+    }
+}
